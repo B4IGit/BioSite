@@ -104,12 +104,12 @@ nav li a {
 }
 
 /* Style rules for main content */
-main div:nth-child(odd) {
+main .columns:nth-child(odd) {
   background-color: #f4bad7;
   padding: 4%;
 }
 
-main div:nth-child(even) {
+main .columns:nth-child(even) {
   background-color: #d2bdfb;
   padding: 4%;
 }
