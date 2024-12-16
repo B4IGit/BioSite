@@ -222,8 +222,17 @@ footer {
     font-size: 2em;
   }
 
+  nav li:hover {
+    background-color: #FFFFFF;
+    opacity: 80%;
+  }
+
   nav li a {
     padding: 0.5em 1.5em;
+  }
+
+  nav li a:hover {
+    color: #3c0a4a;
   }
 
   /* Desktop Viewport: Style rules for header content */
