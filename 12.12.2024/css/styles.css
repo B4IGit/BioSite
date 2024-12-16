@@ -11,9 +11,11 @@ body, header, nav, main, footer, img, h1, h3, ul, aside {
   border: 0;
 }
 
+
+
 /* Style for body and images */
 body {
-  background-color: #e482b3;
+  background-color: #E497DE;
 }
 
 img {
@@ -37,7 +39,6 @@ img {
   position: relative;
 }
 
-/* this needs to be moved to tablet and desktop view */
 .container h3 {
   position: absolute;
   top: 50%;
@@ -57,20 +58,20 @@ aside img {
   text-align: center;
   font-size: 3em;
   margin-top: 2%;
-  color: #eed8f4;
-  text-shadow: 3px 5px 5px #e45095;
+  color: #FFFFFF;
+  text-shadow: 3px 5px 5px #721D60;
 }
 
 .mobile h3 {
   font-family: "Outfit", sans-serif;
   text-align: center;
   font-size: 1.25em;
-  color: #eed8f4;
+  color: #FFFFFF;
 }
 
 /* Style rules for navigation area */
 nav {
-  background-color: #e45095;
+  background-color: #721D60;
 }
 
 nav ul {
@@ -98,14 +99,14 @@ nav li:nth-child(2) {
 
 nav li a {
   display: block;
-  color: #eed8f4;
+  color: #FFFFFF;
   padding: 0.5em 2em;
   text-decoration: none;
 }
 
 /* Style rules for main content */
 main .columns:nth-child(odd) {
-  background-color: #f4bad7;
+  background-color: #F8C5F0;
   padding: 4%;
 }
 
@@ -121,8 +122,8 @@ main img {
 main h2 {
   text-align: center;
   font-family: "Sniglet", system-ui;
-  color: #832350;
-  text-shadow: -2px 2px 5px #eed8f4;
+  color: #FFFFFF;
+  text-shadow: -2px 3px 5px #3c0a4a;
   font-size: 1.75em;
 }
 
@@ -159,15 +160,15 @@ span {
 footer {
   text-align: center;
   font-size: 1em;
-  background-color: #e45095;
-  color: #eed8f4;
+  background-color: #721D60;
+  color: #FFFFFF;
   padding: 2% 0;
   border-top: 3px solid #b2e0f3;
 }
 
 /* Media Query for tablet viewport */
 @media screen and (min-width: 620px), print {
-  /* Tablet viewport: show tab-desk, hide mobile class */
+  /* Tablet Viewport: show tab-desk, hide mobile class */
   .tab-desk {
     display: block;
   }
@@ -176,16 +177,16 @@ footer {
     display: none;
   }
 
-  /* Tablet viewport: Style rules for header */
+  /* Tablet Viewport: Style rules for header */
   .container h3 {
     width: 100%;
     font-size: 3em;
-    font-family: "Outfit", sans-serif;
-    color: #eed8f4;
-    text-shadow: 1px 3px 5px #000;
+    font-family: "Oleo Script Swash Caps", system-ui;
+    color: #FFFFFF;
+    text-shadow: 4px 6px 8px #721D60;
   }
 
-  /* Tablet viewport: Style rules for nav area */
+  /* Tablet Viewport: Style rules for nav area */
   nav li {
     display: inline-block;
     font-size: 1.25em;
@@ -205,11 +206,71 @@ footer {
     padding: 0.5em;
   }
 
-  /* Tablet viewport: Style rules for main content */
+  /* Tablet Viewport: Style rules for main content */
   .columns {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
+    padding: 3%;
   }
 }
 
+/* Media Query for Desktop Viewports */
+@media screen and (min-width: 1000px), print {
+  /* Desktop Viewport: Style rules for nav area */
+  nav li {
+    font-size: 2em;
+  }
+
+  nav li a {
+    padding: 0.5em 1.5em;
+  }
+
+  /* Desktop Viewport: Style rules for header content */
+   .container h3 {
+    font-size: 6em;
+  }
+
+  /* Desktop Viewport: Style rules for main content */
+  .columns div {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  main h2 {
+    font-size: 3em;
+  }
+
+  main p {
+    font-size: 1.5em;
+  }
+
+  .columns li {
+    font-size: 1.5em;
+  }
+
+  /* Desktop Viewport: Style rules for footer content */
+  footer p {
+    font-size: 1.3em;
+  }
+}
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px) {
+  body {
+    background: linear-gradient(#cba5c7, #b2e0f3);
+  }
+
+  #wrapper {
+    width: 1920px;
+    margin: 0 auto;
+  }
+}
+
+/* Media Query for Print*/
+@media print {
+  body {
+    color: #000;
+    background-color: #fff;
+  }
+}
