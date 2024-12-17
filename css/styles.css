@@ -96,6 +96,10 @@ nav li:nth-child(2) {
   border-bottom: #b2e0f3 solid 3px;
 }
 
+nav li:nth-child(3) {
+  border-bottom: #b2e0f3 solid 3px;
+}
+
 
 nav li a {
   display: block;
@@ -127,6 +131,13 @@ main h2 {
   font-size: 1.75em;
 }
 
+main h3 {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.5em;
+  color: #FFFFFF;
+  text-shadow: -2px 3px 5px #3c0a4a;
+}
+
 main p {
   font-size: 1.25em;
   font-family: "Outfit", sans-serif;
@@ -154,6 +165,41 @@ span {
 
 .bottom-spacing {
   margin-bottom: 4%;
+}
+
+/* Style rules for class btn */
+.pristene {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #3c0a4a;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: #3c0a4a;
+}
+
+.pristene a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+.pristene:hover {
+  background-color: #FFFFFF;
+}
+
+.pristene a:hover {
+  color: #3c0a4a;
+}
+
+/* Style rules to show mobile-tablet*/
+.mobile-tablet {
+  display: block;
+}
+
+/* Style rules for table*/
+.hide-table {
+  display: none;
 }
 
 /* Style rules for footer content */
@@ -202,6 +248,10 @@ footer {
     border-bottom: none;
   }
 
+  nav li:nth-child(3) {
+    border-bottom: none;
+  }
+
   nav li a {
     padding: 0.5em;
   }
@@ -219,7 +269,7 @@ footer {
 @media screen and (min-width: 1000px), print {
   /* Desktop Viewport: Style rules for nav area */
   nav li {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   nav li:hover {
@@ -246,16 +296,71 @@ footer {
     margin: 0 auto;
   }
 
+  .columns div:last-child {
+    max-width: none;
+    margin-top: 2%;
+  }
+
   main h2 {
     font-size: 3em;
   }
 
   main p {
-    font-size: 1.5em;
+    font-size: 1.3em;
+    line-height: 1.5em;
   }
 
   .columns li {
     font-size: 1.5em;
+  }
+
+  .row {
+    width: 100%;
+    grid-column: 1 / span 2;
+    margin: 4% auto 0;
+  }
+
+  /* Style rules for table */
+  .hide-table {
+    display: block;
+  }
+  table {
+    width: 100%;
+    border: 1px solid #3c0a4a;
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+
+  caption {
+    font-size: 1.6em;
+    font-weight: bold;
+    padding: 1%;
+    background-color: #721D60;
+    color: #FFFFFF;
+  }
+
+  th, td {
+    border: 1px solid #3c0a4a;
+    padding: 1%;
+  }
+
+  th {
+    background-color: #3c0a4a;
+    color: #FFFFFF;
+    font-size: 1.25em;
+  }
+
+  tr:nth-child(even) {
+    background-color: rgba(240, 238, 248, 0.92);
+  }
+
+  tr:nth-child(odd) {
+    background-color: #FFFFFF;
+  }
+
+  /* Style rules to hide mobile-tablet*/
+  .mobile-tablet {
+      display: none;
   }
 
   /* Desktop Viewport: Style rules for footer content */
