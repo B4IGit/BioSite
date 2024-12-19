@@ -198,10 +198,8 @@ span {
   display: block;
 }
 
-.mobile-tablet {
-  p {
-    margin-left: 4%;
-  }
+.mobile-tablet p {
+    margin-left: 4%
 }
 
 /* Style rules for table*/
@@ -324,7 +322,7 @@ footer {
     color: #3c0a4a;
   }
 
-  nav li a:visited { <!-- pseudo class to change link after it has been use -->
+  nav li a:visited { /* pseudo class to change link after it has been use */
     color: #b2e0f3;
   }
 
